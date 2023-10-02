@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to our home</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .main {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 20px;
+        }
+
+        .register {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        /* Inline CSS */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* External CSS (You can create a separate CSS file and link it here) */
+        #brands {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="home.jpg" alt="Our Home">
+
+    <div class="main">
+        <div class="register">
+            <h2>Sign up here</h2>
+            <form id="signup" method="post">
+                <label>First Name:</label><br>
+                <input type="text" name="fname" id="name" placeholder="Enter Your First Name"><br><br>
+                <label>Last Name:</label><br>
+                <input type="text" name="lname" id="name" placeholder="Enter Your Last Name"><br><br>
+                <label>Your Age:</label><br>
+                <input type="number" name="age" id="name" placeholder="What is your age?"><br><br>
+                <label>Email address:</label><br>
+                <input type="email" name="email" id="name" placeholder="Type your Email"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Male</th>
+                        <th>Female</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Gents perfume</td>
+                        <td>ladies perfume</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Shirts</td>
+                        <td>Dresses</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+            <p>I have to see Jenny on <time datetime="2008-02-14 20:00">this day</time>.</p>
+
+            <label for="brands">Choose a brand:</label>
+            <select id="brands">
+                <option value="prada">Prada</option>
+                <option value="chanel">Chanel</option>
+                <option value="rolex">Rolex</option>
+                <option value="dior">Dior</option>
+            </select>
+            <h1 style="color:blue;">NEW ARRIVAL!</h1>
+
+            <p style="color:red;">30% off on new arrivals</p>
+      
+            <ol>
+                <li>Watch</li>
+                <li>Perfume</li>
+                <li>Body wash</li>
+            </ol>
+
+            <ul>
+                <li>Dresses</li>
+                <li>Shirts</li>
+                <li>Bags</li>
+            </ul>
+
+            <p>Visit our <a href="https://example.com">website</a> for more information.</p>
+        </div><!--end register-->
+    </div><!--end main-->
+</body>
+</html>
